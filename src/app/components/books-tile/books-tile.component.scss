@@ -1,0 +1,20 @@
+.bookTileContainer {
+  background-color: white;
+  border-left: 3px solid #fcba03;
+  border-radius: 2px;
+
+  .heading {
+    color: black;
+    font-size: 1.3rem;
+    font-weight: 400;
+    text-overflow: ellipsis; 
+    overflow: hidden; 
+    white-space: nowrap;
+  }
+
+  .content {
+    color: gray;
+    font-size: .9rem;
+    font-weight: 400;
+  }
+}

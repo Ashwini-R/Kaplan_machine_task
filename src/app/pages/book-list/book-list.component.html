@@ -1,0 +1,31 @@
+<div class="container">
+    <div class="col-sm-12  bgStyle border mt-5 mb-5">
+        <div class="col-sm-12">
+            <div class="d-flex">
+                <div class="col-sm-6 pl-0">
+                    <h4 class="textColor"><b>Books</b></h4>
+                </div>
+                <div class="col-sm-6 btnAlignment">
+                    <button class="btn btnStyle p-1 mt-2" (click)="openDialog()">Create New Book</button>
+            </div>
+        </div>
+        <div class=col-sm-12>
+            <div class="d-flex">
+                <mat-form-field class="col-sm-5 pl-0">
+                    <mat-icon matPrefix>search</mat-icon>
+                    <input matInput placeholder="Search Books" (keyup)="search($event)">
+                </mat-form-field>
+            </div>
+        </div>
+        <div class="col-sm-12 row">
+            <h4 class="ml-3"><b>All Books</b></h4>
+        </div>
+        <div class="col-12 row">
+            <div *ngFor="let book of books" class="col-lg-6 col-md-6 col-sm-12 col-xs-12 mt-2 mb-2">
+                <app-books-tile bookName="{{book.volumeInfo.title}}" publisher="{{book.volumeInfo.publisher}}"
+                    publishedDate="{{book.volumeInfo.publishedDate}}" author="{{book.volumeInfo.authors}}">
+                </app-books-tile>
+            </div>
+        </div>
+    </div>
+</div>
