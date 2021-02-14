@@ -1,5 +1,4 @@
 # Kaplan_machine_task
-## Run
 
 ### 1) clone the repository: 
 git clone https://github.com/Ashwini-R/Kaplan_machine_task.git
